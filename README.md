@@ -6,4 +6,8 @@ Venía todo bien. Hasta que empecé con el css y me trabé en el header por este
 
 No entiendo qué es ni de dónde viene ese espacio blanco extra que se agrega. Estoy hace 1 hora probando todo y no logro eliminarlo. Por qué puede ser que suceda??
 
+Otra consulta que tengo, es si podemos usar javascript para algunas animaciones. Por ejemplo la del carrusel de la section de portfolio de mi index (ver en figma)
+
 Espero su ayuda para poder seguir :)
+
+
