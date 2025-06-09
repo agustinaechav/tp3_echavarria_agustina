@@ -8,6 +8,8 @@ No entiendo qué es ni de dónde viene ese espacio blanco extra que se agrega. E
 
 Otra consulta que tengo, es si podemos usar javascript para algunas animaciones. Por ejemplo la del carrusel de la section de portfolio de mi index (ver en figma)
 
+Ahora veo también que no se visualiza la tipografía, habré puesto algo mal?
+
 Espero su ayuda para poder seguir :)
 
 
