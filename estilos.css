@@ -6,22 +6,34 @@
 
 /*general*/
 
-*{
-    color: #171614;
+* {
+  /*   outline: 1px solid red; s*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: "tt-nooks", serif;
+    color: #171614;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     background-color: #F5F2ED;
-    padding: 0;
-	margin: 0;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-a{
+
+ul {
+    list-style-type: none;
+}
+
+a {
     color: inherit;
-    font: inherit;
     text-decoration: none;
 }
 
@@ -32,11 +44,7 @@ button{
     font-weight: 700;
 }
 
-body { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* estilos */
 
 h1{
     font-size: 126px;
@@ -59,18 +67,18 @@ h3{
 
 /*header*/
 
-
 header{
+    margin-top: 35px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 35px;
 }
 
-header div{
-    border: 2px solid #FB95C9;
+header nav{
+    border: 2px, solid, #FB95C9;
     border-radius: 20px;
-    padding: 16px 163px;
+    width: 90%;
+    padding: 20px 163px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +88,7 @@ header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    width: 50%;
 }
 
 .boton-nav{
@@ -90,8 +98,132 @@ header div{
     font-weight: 700;
 }
 
-/*main*/
+.boton-nav:hover{
+    color: #82C0E8;
+    font-family: "tt-nooks", serif;
+    font-weight: 300;
+}
+
+/*main - index*/
 
 /*section - landing*/
 
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 137px;
+    padding-top: 150px;
+
+}
+
+.landing-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 85px;
+}
+
+.titulo-landing{
+    color: #FB95C9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.subtitulo-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
 /*section - sobre mi*/
+
+.sobremi-index{
+    width: 100%;
+    background-color: #82C0E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+    padding: 115px 0px;
+}
+
+.sobremi-index img{
+    transform: rotate(4.615deg);
+    flex-shrink: 0;
+    aspect-ratio: 125/82;
+}
+
+.sm-texto{
+    max-width: 488px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.izq-textoarriba-blanco{
+    color: #F5F2ED;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.sm-parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+/* section - portfolio */
+
+
+/* botones */
+
+.boton-landing{
+    color: #F5F2ED;
+    font-family: "tt-nooks", serif;
+    font-weight: 300;
+    background-color: #FB95C9;
+    width: 333px;
+    height: 69px;
+    border-radius: 15px;
+}
+
+.boton-landing:hover{
+    background-color: #82C0E8;
+    font-family: "tt-nooks-script", sans-serif;
+    font-weight: 700;
+}
+
+.boton-blanco{
+    color: #FB95C9;
+    width: 165px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.boton-blanco:hover{
+    color: #F5F2ED;
+    background-color: #FB95C9;
+}
+
+/* animaciones */
+
+.flor-icono-inicio{
+    animation: girar 5s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

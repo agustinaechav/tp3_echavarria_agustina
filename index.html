@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agustina echavarria</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://use.typekit.net/ozn4ptz.css">
@@ -10,9 +11,10 @@
 
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="img/flor-icono.svg" alt="Bot&oacute;n inicio"></a>
             <nav>
+                <a href="index.html" target="_self"><img src="img/flor-icono.svg" width="39px" height="41px" alt="Bot&oacute;n inicio" class="flor-icono-inicio"></a>
+                <!--<input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icono"></label>-->
                 <ul class="botonera-nav">
                     <li class="boton-nav"><a href="sobremi.html">sobre mi</a></li>
                     <li class="boton-nav"><a href="portfolio.html">portfolio</a></li>
@@ -20,12 +22,10 @@
                     <li class="boton-nav"><a href="contacto.html">contacto</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <body>
         <section class="landing">
             <article class="landing-texto">
-                <div class="landing-izq">
                     <div class="titulo-landing">
                         <h1>hola,</h1>
                         <h1>soy agu</h1>
@@ -33,18 +33,18 @@
                     <div class="subtitulo-landing">
                         <h2>bienvenidx a mi espacio</h2>
                         <h2>espero que encuentres</h2>
-                        <h2>lo que est&aacute;s buscando</h2>
+                        <h2>lo que est&aacute;s buscando&#8230;</h2>
                     </div>
-                    <button class="boton-landing">¿qu&eacute; estoy buscando?</button>
-                </div>
-                <img src="img/flor-mano.png" alt="Mano con flor">
+                    <button class="boton-landing"><a href="#sobremiind">¿qu&eacute; estoy buscando?</a></button>
             </article>
+            <img src="img/flor-mano.png" width="547px" height="807px" alt="Mano con flor">
         </section>
-        <section class="sobremi-index">
+        
+        <section class="sobremi-index" id="sobremiind">
             <article class="sm-texto">
-                <div class="izq-textoarriba">
-                    <h2>quiz&aacute;s...</h2>
-                    <div class="izq-titulo">
+                <div class="izq-textoarriba-blanco">
+                    <h2>quiz&aacute;s&#8230;</h2>
+                    <div class="izq-titulo-blanco">
                         <h3>saber</h3>
                         <h3>sobre mi</h3>
                     </div>
@@ -52,15 +52,16 @@
                 <div class="sm-parrafo">
                     <p>me llamo agustina. soy estudiante de diseño y comunicación visual en la unla. desde que soy muy chiquita (como en la foto) me gusta el arte y todos sus relacionados. también me gustan los gatos, ah y merendar. le tengo fobia a las arañas pero me gusta observarlas desde lejos. pienso que son pequeñas artistas  dentro de la naturaleza, con esas telas hermosas que crean. soy de sagitario, como gachi y pachi, y... perdón. divagué.</p>
                     <p>supongo que buscás otro tipo de información. ¡no te preocupes!</p>
+                    <button class="boton-blanco"><a href="sobremi.html">toc&aacute; ac&aacute;</a></button>
                 </div>
-                <button class="boton-blanco">toc&aacute; ac&aacute;</button>
             </article>
-            <img src="img/foto-agu-chiquita.png" alt="Foto de Agu de chiquita">
+            <img src="img/foto-agu-chiquita.png" width="875px" height="574px" alt="Foto de Agu de chiquita">
         </section>
+        <!--
         <section class="portfolio-index">
             <article class="pf-texto">
                 <div class="izq-textoarriba">
-                    <h2>quiz&aacute;s...</h2>
+                    <h2>quiz&aacute;s&#8230;</h2>
                     <div class="izq-titulo">
                         <h3>ver mi</h3>
                         <h3>portfolio</h3>
@@ -68,12 +69,12 @@
                 </div>
                 <button class="boton-celrosa">quiero m&aacute;s</button>
             </article>
-            <img src="img/carrusel-1.png"> <!-- esto va de prueba -->
         </section>
+        
         <section class="mascosas-index">
             <article class="pf-texto">
                 <div class="izq-textoarriba">
-                    <h2>quiz&aacute;s...</h2>
+                    <h2>quiz&aacute;s&#8230;</h2>
                     <div class="izq-titulo">
                         <h3>otro tipo</h3>
                         <h3>de cosas</h3>
@@ -81,12 +82,12 @@
                 </div>
                 <button class="boton-blanco2">a ver</button>
             </article>
-            <img src="img/caja.png" alt="Caja con objetos">
+            <img src="img/caja.png" width="1032px" height="812px" alt="Caja con objetos">
         </section>
         <section class="contacto-index">
             <div class="titulos-centrado">
                 <h2>o quiz&aacute;s no lo sab&eacute;s</h2>
-                <h3>pero lo podemos charlar :&#41</h3>
+                <h3>pero lo podemos charlar :&#41;</h3>
             </div>
             <button class="boton-rosacel">bueno dale</button>
         </section>
@@ -107,6 +108,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="script.js"></script>
 </body>
 </html>
