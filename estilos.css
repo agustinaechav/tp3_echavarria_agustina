@@ -2,14 +2,13 @@
 /* CSS Document */
 
 /*fonts*/
-@import url('https://use.typekit.net/pcx8uhu.css');
-@import url('https://use.typekit.net/pcx8uhu.css');
+@import url("https://use.typekit.net/pcx8uhu.css");
 
 /*general*/
 
 *{
     color: #171614;
-    font-family: "TT Nooks";
+    font-family: "TT-Nooks";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -28,7 +27,7 @@ a{
 
 button{
     border: none;
-    font-family: "TT Nooks Script";
+    font-family: "TT-Nooks-Script";
     font-size: 26px;
     font-weight: 700;
 }
@@ -52,7 +51,7 @@ h2{
 }
 
 h3{
-    font-family: "TT Nooks Script";
+    font-family: "TT-Nooks-Script";
     font-size: 100px;
     font-weight: 700;
     line-height: 90px;
@@ -86,7 +85,7 @@ header div{
 
 .boton-nav{
     color: #FB95C9;
-    font-family:"TT Nooks Script";
+    font-family:"TT-Nooks-Script";
     font-size: 28px;
     font-weight: 700;
 }
