@@ -25,6 +25,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: url(img/vectores/cursor.svg), auto;
 }
 
 
@@ -169,6 +170,44 @@ header nav{
     cursor: pointer;
 }
 
+/* footer */
+
+footer{
+    color: #82C0E8;
+    margin-bottom: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-footer{
+    border: 2px, solid, #82C0E8;
+    border-radius: 20px;
+    width: 90%;
+    padding: 30px 163px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ftr-izq{
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr-der{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.redes-ftr{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 /*main - index*/
 
 /*section - landing*/
@@ -253,6 +292,126 @@ header nav{
 
 /* section - portfolio */
 
+.portfolio-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 115px 0px;
+}
+
+.pf-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 65px;
+}
+
+/* slider - portfolio(index) */
+
+.carrusel-pf {
+  position: relative;
+  width: 797px;
+  height: 373px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+input[name="radio-btn"] {
+  display: none;
+}
+
+
+.nav-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.nav-dots label {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: #F5F2ED;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+input#radio1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+input#radio2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#radio3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+input#radio1:checked ~ .nav-dots label[for="radio1"],
+input#radio2:checked ~ .nav-dots label[for="radio2"],
+input#radio3:checked ~ .nav-dots label[for="radio3"] {
+  background-color: #FB95C9;
+}
+
+
+/* section - mas cosas */
+
+.mascosas-index{
+    background-color: #FB95C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+    
+}
+
+.mascosas-index img{
+    width: 50%;
+    height: auto;
+}
+
+/* section - contacto */
+
+.contacto-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 150px 0px;
+}
+
+.titulos-centrado{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
 
 /* botones */
 
@@ -274,6 +433,7 @@ header nav{
 
 .boton-blanco{
     color: #FB95C9;
+    background-color: #F5F2ED;
     width: 165px;
     height: 64px;
     border-radius: 15px;
@@ -283,6 +443,47 @@ header nav{
     color: #F5F2ED;
     background-color: #FB95C9;
 }
+
+.boton-blanco2{
+    color: #82C0E8;
+    background-color: #F5F2ED;
+    width: 165px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.boton-blanco2:hover{
+    color: #F5F2ED;
+    background-color: #82C0E8;
+}
+
+.boton-celrosa{
+    color: #F5F2ED;
+    background-color: #82C0E8;
+    width: 165px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.boton-celrosa:hover{
+    color: #F5F2ED;
+    background-color: #FB95C9;
+}
+
+.boton-rosacel{
+    color: #F5F2ED;
+    background-color: #FB95C9;
+    width: 165px;
+    height: 64px;
+    border-radius: 15px;
+}
+
+.boton-rosacel:hover{
+    color: #F5F2ED;
+    background-color: #82C0E8;
+}
+
+
 
 /* animaciones */
 
@@ -345,6 +546,10 @@ header nav{
         transition: background-image 0.4s ease;
     }
 
+    .div-footer{
+    padding: 30px 100px;
+    }
+
     h1 {
         font-size: 100px;
         line-height: 90px;
@@ -360,7 +565,12 @@ header nav{
         line-height: 70px;
     }
 
-    p{
+    h4{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    p, h5{
         font-size: 18px;
         line-height: 24px;
     }
@@ -400,8 +610,8 @@ header nav{
         width: auto;
     }
 
-    .sobremi-index{
-        align-items: flex-start;
+    .sm-texto{
+        align-items: center;
     }
 
     .boton-blanco{
@@ -411,6 +621,46 @@ header nav{
     font-size: 18px;
 }
 
+    .boton-celrosa{
+        width: 120px;
+        height: 46px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .boton-rosacel{
+        width: 120px;
+        height: 46px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .boton-blanco2{
+        width: 120px;
+        height: 46px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .portfolio-index{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 100px;
+        padding: 80px 0px;
+    }
+
+    .mascosas-index{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .contacto-index{
+        padding: 80px 0px;
+    }
 
 }
 
@@ -426,7 +676,7 @@ header nav{
         padding: 100px 0px;
     }
 
-        header nav{
+    header nav{
         padding: 20px 100px;
     }
 
@@ -445,6 +695,25 @@ header nav{
         display: none;
     }
 
+    .carrusel-pf{
+        width: 80%;
+        height: auto;
+    }
+
+    .div-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+    }
+    .ftr-izq{
+        text-align: center;
+    }
+
+    .ftr-der{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 
@@ -469,6 +738,11 @@ header nav{
     h3{
         font-size: 70px;
         line-height: 60px;
+    }
+
+        h4{
+        font-size: 20px;
+        line-height: 24px;
     }
 
 }

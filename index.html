@@ -23,7 +23,7 @@
                 </ul>
             </nav>
     </header>
-    <body>
+    <main>
         <section class="landing">
             <article class="landing-texto">
                     <div class="titulo-landing">
@@ -58,7 +58,7 @@
             </article>
             <img src="img/imagenes/foto-agu-chiquita.png" alt="Foto de Agu de chiquita" class="agu-chiquita2">
         </section>
-        <!--
+        
         <section class="portfolio-index">
             <article class="pf-texto">
                 <div class="izq-textoarriba">
@@ -68,51 +68,69 @@
                         <h3>portfolio</h3>
                     </div>
                 </div>
-                <button class="boton-celrosa">quiero m&aacute;s</button>
+                <button class="boton-celrosa"><a href="portfolio.html">quiero m&aacute;s</a></button>
             </article>
+            <div class="carrusel-pf">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slides">
+                    <div class="slide"><img src="img/imagenes/elio-rosa.png" alt="Elio"></div>
+                    <div class="slide"><img src="img/imagenes/schiele-rosa.png" alt="Reflejos del alma"></div>
+                    <div class="slide"><img src="img/imagenes/angula-rosa.png" alt="Angula"></div>
+                </div>
+                <div class="nav-dots">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                </div>
+            </div>
         </section>
         
         <section class="mascosas-index">
             <article class="pf-texto">
                 <div class="izq-textoarriba">
-                    <h2>quiz&aacute;s&#8230;</h2>
+                    <h2 class="h2-blanco">quiz&aacute;s&#8230;</h2>
                     <div class="izq-titulo">
-                        <h3>otro tipo</h3>
-                        <h3>de cosas</h3>
+                        <h3 class="h3-blanco">otro tipo</h3>
+                        <h3 class="h3-blanco">de cosas</h3>
                     </div>
                 </div>
-                <button class="boton-blanco2">a ver</button>
+                <button class="boton-blanco2"><a href="mascosas.html">a ver</a></button>
             </article>
-            <img src="img/caja.png" width="1032px" height="812px" alt="Caja con objetos">
+            <img src="img/imagenes/caja.png" width="1032px" height="812px" alt="Caja con objetos">
         </section>
+        
         <section class="contacto-index">
             <div class="titulos-centrado">
                 <h2>o quiz&aacute;s no lo sab&eacute;s</h2>
                 <h3>pero lo podemos charlar :&#41;</h3>
             </div>
-            <button class="boton-rosacel">bueno dale</button>
+            <button class="boton-rosacel"><a href="mascosas.html">bueno dale</a></button>
         </section>
-    </body>
+    </main>
+    
     <footer>
         <div class="div-footer">
             <div class="ftr-izq">
-                <p>computaci&oacute;n iii</p>
-                <p>c&aacute;tedra wisch&nacute;evsky</p>
-                <p>1er cuatrimestre 2025</p>
+                <h5>computaci&oacute;n iii</h5>
+                <h5>c&aacute;tedra wisch&ntilde;evsky</h5>
+                <h5>1er cuatrimestre 2025</h5>
             </div>
             <div class="ftr-der">
-                <p>buscame tambi&eacute;n en:</p>
+                <h5>buscame tambi&eacute;n en:</h5>
                 <div class="redes-ftr">
-                    <a href="https://www.instagram.com/agu.echav/?hl=es-la" target="_blank">ig</a>
-                    <a href="https://www.behance.net/agustinaechav" target="_blank">be</a>
-                    <a href="https://www.linkedin.com/in/agustina-echavarria-a90819318/?originalSubdomain=ar" target="_blank">in</a>
+                    <a href="https://www.instagram.com/agu.echav/?hl=es-la" target="_blank"><h4>ig</h4></a>
+                    <a href="https://www.behance.net/agustinaechav" target="_blank"><h4>be</h4></a>
+                    <a href="https://www.linkedin.com/in/agustina-echavarria-a90819318/?originalSubdomain=ar" target="_blank"><h4>in</h4></a>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer> 
+
     <div class="redes-fijo">
-        <a href="https://www.instagram.com/agu.echav/?hl=es-la"><h4 class="h4-blanco">ig</h4></a>
-        <a href="https://www.behance.net/agustinaechav"><h4 class="h4-blanco">bh</h4></a>
+        <a href="https://www.instagram.com/agu.echav/?hl=es-la" target="_blank"><h4 class="h4-blanco">ig</h4></a>
+        <a href="https://www.behance.net/agustinaechav" target="_blank"><h4 class="h4-blanco">bh</h4></a>
     </div>
     <div class="volver-arriba">
         <a href="#header-top"><img src="img/vectores/flecha-arriba-blanca.svg" alt="volver arriba"></a>
