@@ -44,6 +44,28 @@ button{
     font-weight: 700;
 }
 
+.redes-fijo{
+    position: fixed;
+    top: 465px; 
+    left: 0px; 
+    background-color: #171614;
+    padding: 26px 13px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.volver-arriba{
+    position: fixed;
+    bottom: 200px; 
+    right: 0px; 
+    background-color: #171614;
+    padding: 35px 29px;
+    border-radius: 15px 0px 0px 15px;
+}
+
 /* estilos */
 
 h1{
@@ -65,6 +87,40 @@ h3{
     line-height: 90px;
 }
 
+h4{
+    font-family: "tt-nooks-script", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 33px;
+}
+
+h6{
+    color: #F5F2ED;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.h1-rosa, .h4-rosa{
+    color: #FB95C9;
+}
+
+.h2-blanco, .h3-blanco, .h4-blanco{
+    color: #F5F2ED;
+}
+
+.h4-celeste, .h5-celeste{
+    color: #82C0E8;
+}
+
+.h5-bold{
+    font-weight: 700;
+}
+
 /*header*/
 
 header{
@@ -84,11 +140,11 @@ header nav{
     align-items: center;
 }
 
-.botonera-nav{
+#botonera-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    gap: 75px;
 }
 
 .boton-nav{
@@ -104,6 +160,15 @@ header nav{
     font-weight: 300;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-icono {
+    display: none;
+    cursor: pointer;
+}
+
 /*main - index*/
 
 /*section - landing*/
@@ -112,7 +177,8 @@ header nav{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 137px;
+    gap: 12%;
+    width: 100%;
     padding-top: 150px;
 
 }
@@ -125,7 +191,6 @@ header nav{
 }
 
 .titulo-landing{
-    color: #FB95C9;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -135,6 +200,11 @@ header nav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.mano-flor{
+    max-width: 50%;
+    height: auto;
 }
 
 
@@ -150,22 +220,20 @@ header nav{
     padding: 115px 0px;
 }
 
-.sobremi-index img{
-    transform: rotate(4.615deg);
-    flex-shrink: 0;
-    aspect-ratio: 125/82;
+.agu-chiquita2{
+    max-width: 50%;
+    height: auto;
 }
 
 .sm-texto{
-    max-width: 488px;
+    max-width: 24%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 100px;
 }
 
-.izq-textoarriba-blanco{
-    color: #F5F2ED;
+.izq-textoarriba{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -177,6 +245,10 @@ header nav{
     flex-direction: column;
     align-items: flex-end;
     gap: 40px;
+}
+
+.agu-chiquita1{
+    display: none;
 }
 
 /* section - portfolio */
@@ -226,4 +298,177 @@ header nav{
     to {
         transform: rotate(360deg);
     }
+}
+
+
+/* media queries 1200px */
+
+@media screen and (max-width: 1200px){
+
+    #menu-toggle:checked + .menu-icono + #botonera-nav {
+        display: flex;
+    }
+    #menu-toggle:checked + .menu-icono {
+        background-image: url('img/vectores/cruz-rosa.svg');
+        width: 35px;
+        height: 35px;
+    }
+
+    #botonera-nav {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 40px;
+        width: 100%;
+        height: 100vh;
+        background-color: #F5F2ED;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 200px;
+        transition: background 0.4s ease;
+    }
+
+    #botonera-nav li {
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-icono {
+        display: block;
+        z-index: 1;
+        background-image: url('img/vectores/menu-icono.svg');
+        background-size: cover;
+        width: 40px;
+        height: 30px;
+        transition: background-image 0.4s ease;
+    }
+
+    h1 {
+        font-size: 100px;
+        line-height: 90px;
+    }
+    
+    h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    h3{
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .boton-landing{
+        font-size: 18px;
+        width: 250px;
+        height: 50px;
+}
+
+    .redes-fijo{
+        position: fixed;
+        top: 365px; 
+        left: 0px; 
+        padding: 18px 13px;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .redes-fijo h4{
+        font-size: 20px;
+    }
+
+    .volver-arriba{
+    position: fixed;
+    bottom: 200px; 
+    right: 0px; 
+    padding: 20px 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+    .volver-arriba img{
+        height: 25px;
+        width: auto;
+    }
+
+    .sobremi-index{
+        align-items: flex-start;
+    }
+
+    .boton-blanco{
+    width: 120px;
+    height: 46px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+}
+
+
+/* media queries 992px */
+@media screen and (max-width: 992px){
+
+    .mano-flor{
+        display: none;
+    }
+
+    .landing{
+        padding: 100px 0px;
+    }
+
+        header nav{
+        padding: 20px 100px;
+    }
+
+    .agu-chiquita1{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sm-texto{
+        max-width: 70%;
+        gap: 60px;
+    }
+
+    .agu-chiquita2{
+        display: none;
+    }
+
+}
+
+
+/* media queries 600px */
+
+@media screen and (max-width: 600px){
+
+    header nav{
+        padding: 20px 50px;
+    }
+
+    h1{
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+        h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h3{
+        font-size: 70px;
+        line-height: 60px;
+    }
+
 }
