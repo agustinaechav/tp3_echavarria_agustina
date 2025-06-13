@@ -2,9 +2,9 @@
 
 Este trabajo consistió en el diseño de un Portfolio web utilizando lenguaje HTML5 y CSS. Para esta ocasión, puse toda la carne al asador como dirían, desafiándome a mi misma.
 
-Resolución de pantalla: 1366 x 768 px. (Lo visualizo con un zoom out del 67% para que se muestre correctamente)
-Editor de código: Visual Studio Code.
-Figma: https://www.figma.com/design/SnHstZeTj43cv3HaF4W8hp/tp3_echavarria_agustina?node-id=149-130&t=ir0opODMqVm30SrS-1
+- Resolución de pantalla: 1366 x 768 px. (Lo visualizo con un zoom out del 67% para que se muestre correctamente)
+- Editor de código: Visual Studio Code.
+- Figma: https://www.figma.com/design/SnHstZeTj43cv3HaF4W8hp/tp3_echavarria_agustina?node-id=149-130&t=ir0opODMqVm30SrS-1
 
 **Contenido:**
 
