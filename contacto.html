@@ -24,7 +24,46 @@
             </nav>
     </header>
 
-    <main>
+    <main id="main-cont">
+        <section class="contacto-full">
+            <div class="cont-izq">
+                <div>
+                    <h1>charlemos,</h1>
+                    <h1>entonces!</h1>
+                </div>
+                <p class="rosa">contame qu&eacute; (de todo lo que viste) es justo lo que estás buscando</p>
+            </div>
+            <form method="post" action="" target="_blank" enctype="multipart/form-data" class="formulario">
+                <div class="datos-persona">
+                    <div class="nombre">
+                        <label for="nombre"><h5 class="bold-script">tu nombre&#42</h5></label>
+                        <input type="text" name="nombre" id="nombre" maxlength="30" required>
+                    </div>
+                    <div class="mail">
+                        <label for="mail"><h5 class="bold-script">tu mail&#42</h5></label>
+                        <input type="email" name="mail" id="email" required>
+                    </div>
+                </div>
+                <div class="buscas">
+                    <h5 class="bold-script">busc&aacute;s:</h5>
+                        <div class="selecciona">
+                            <label class="checkbox"><input type="checkbox" unchecked><span>diseño</span>
+                            </label>
+                            <label class="checkbox"><input type="checkbox" unchecked><spa>dibujo</span>
+                            </label>
+                            <label class="checkbox"><input type="checkbox" unchecked><span>tatuaje</span>
+                            </label>
+                            <label class="checkbox"><input type="checkbox" unchecked><span>otra cosa</span>
+                            </label>
+                        </div>
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje"><h5 class="bold-script">explayate, es gratis!</h5></label>
+                    <textarea name="mensaje" id="mensaje" maxlength="700" required></textarea>
+                </div>
+                <input type="submit" class="boton-enviar" value="enviar">
+            </form>
+        </section>
 
     </main>
 
