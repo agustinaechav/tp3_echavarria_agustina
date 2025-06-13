@@ -113,6 +113,7 @@ h6{
     color: #F5F2ED;
     font-size: 18px;
     line-height: 30px;
+    font-weight: 400;
 }
 
 .h1-rosa, .h4-rosa{
@@ -502,10 +503,10 @@ input#radio3:checked ~ .nav-dots label[for="radio3"] {
     grid-column-gap: 95px;
 }
 
-.grid-herramientas li {
+.grid-herramientas li{
     transition: transform 0.2s ease-in-out;
 }
-.grid-herramientas li:hover {
+.grid-herramientas li:hover{
     transform: scale(1.120);
 }
 
@@ -616,6 +617,87 @@ iframe{
 
 .julienzo:hover{
     background-image: url('img/imagenes/julienzo-color.png');
+}
+
+
+/* portfolio */
+
+#main-pf{
+    gap: 200px;
+    padding: 200px 0px;
+}
+
+.intro-2{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 190px;
+}
+
+.portfolio-galeria{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.galeria-2col{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-galeria img {
+    transition: transform 0.2s ease-in-out;
+}
+.portfolio-galeria img:hover {
+    transform: scale(1.050);
+}
+
+.galeria-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.popup-completo{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(23, 22, 20, 0.70);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    padding: 100px 0px;
+}
+
+.popup-completo:target{
+    display: flex;
+}
+
+.popup-der{
+    color: #F5F2ED;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 231px;
+}
+
+.titulo-proy-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    width: 431px;
+}
+
+.cruz-popup{
+    background-image: url('img/vectores/cruz-galeria-popup.svg');
+    width: 41px;
+    height: 41px;
+    background-size: cover;
+    background-position: center;
 }
 
 

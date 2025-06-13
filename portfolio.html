@@ -24,8 +24,87 @@
             </nav>
     </header>
 
-    <main>
+    <main id="main-pf">
+        <section class="intro-2">
+            <div>
+                <h1>estos son algunos de</h1>
+                <h1>mis proyectos</h1>
+            </div>
+            <img src="img/vectores/flecha-celeste.svg" width="241px" height="173px" alt="">
+        </section>
+        <section class="portfolio-galeria">
+            <div class="galeria-2col">
+                <a href="#elio" onclick="mostrarGaleria()"><img src="img/imagenes/elio-2.png" width="738px" height="418px" alt="Elio"></a>
+                <a href="#schiele" onclick="mostrarGaleria()"><img src="img/imagenes/schiele-2.png" width="738px" height="418px" alt="Reflejos del alma"></a>
+            </div>
+            <a href="#angula" onclick="mostrarGaleria()"><img src="img/imagenes/angula-2.png" width="1520px" height="731px" alt="Angula"></a>
+            <div class="galeria-2col">
+                <a href="#barbie" onclick="mostrarGaleria()"><img src="img/imagenes/barbie-2.png" width="738px" height="418px" alt="Todo lo que quiso ser"></a>
+                <a href="#maidens" onclick="mostrarGaleria()"><img src="img/imagenes/ofelia-2.png" width="738px" height="418px" alt="Maidens"></a>
+            </div>
+        </section>
 
+        <section id="galeria" class="galeria-popup">
+            <ul>
+                <li class="popup-completo" id="elio">
+                    <img src="img/imagenes/elio-fullproyecto.png" width="1158px" height="858px" alt="Elio">
+                    <div class="popup-der">
+                        <button onclick="ocultarGaleria()"><div class="cruz-popup"></div></button>
+                        <div class="titulo-proy-popup">
+                            <h3>elio</h3>
+                            <h2>&#8212 fanzine</h2>
+                            <a href="https://www.behance.net/gallery/193364175/Fanzine-Elio" target="_blank"><h6>(bh)</h6></a>
+                        </div>
+                        <h6>taller de diseño i  //  nov. 2021</h6>
+                    </div>
+                </li>
+                <li class="popup-completo" id="schiele">
+                    <img src="img/imagenes/schiele-fullproyecto.png" width="1158px" height="858px" alt="Reflejos del alma">
+                    <div class="popup-der">
+                        <button onclick="ocultarGaleria()"><div class="cruz-popup"></div></button>
+                        <div class="titulo-proy-popup">
+                            <h3>reflejos del alma</h3>
+                            <h2>&#8212 libro de artista</h2>
+                            <a href="https://www.behance.net/gallery/180118051/Diseno-editorial-Libro-de-artista" target="_blank"><h6>(bh)</h6></a>
+                        </div>
+                        <h6>espacio tipogr&aacute;fico iii  //  sep. 2023</h6>
+                    </div>
+                </li>
+                <li class="popup-completo" id="angula">
+                    <img src="img/imagenes/angula-fullproyecto.png" width="1158px" height="858px" alt="Elio">
+                    <div class="popup-der">
+                        <button onclick="ocultarGaleria()"><div class="cruz-popup"></div></button>
+                        <div class="titulo-proy-popup">
+                            <h3>angula</h3>
+                            <h2>&#8212 diseño de tipograf&iacute;a</h2>
+                            <a href="https://www.behance.net/gallery/215104681/Angula-Diseno-de-Tipografia-IDT" target="_blank"><h6>(bh)</h6></a>
+                        </div>
+                        <h6>int. al diseño de tipograf&iacute;a  //  dic. 2024</h6>
+                    </div>
+                </li>
+                <li class="popup-completo" id="barbie">
+                    <img src="img/imagenes/barbie-fullproyecto.png" width="1158px" height="858px" alt="Todo lo que quiso ser">
+                    <div class="popup-der">
+                        <button onclick="ocultarGaleria()"><div class="cruz-popup"></div></button>
+                        <div class="titulo-proy-popup">
+                            <h3>todo lo que quiso ser</h3>
+                            <h2>&#8212 publicaci&oacute;n</h2>
+                        </div>
+                        <h6>taller de diseño iv  //  may. 2025</h6>
+                    </div>
+                </li>
+                <li class="popup-completo" id="maidens">
+                    <img src="img/imagenes/ofelia-fullproyecto.png" width="1158px" height="858px" alt="Maidens">
+                    <div class="popup-der">
+                        <button onclick="ocultarGaleria()"><div class="cruz-popup"></div></button>
+                        <div class="titulo-proy-popup">
+                            <h3>maidens</h3>
+                            <h2>&#8212 colecci&oacute;n de libros</h2>
+                        </div>
+                        <h6>taller de diseño iv  //  abr. 2025</h6>
+                    </div>
+                </li>
+            </ul>
     </main>
 
     <footer>
@@ -54,6 +133,16 @@
     <div class="volver-arriba">
         <a href="#header-top"><img src="img/vectores/flecha-arriba-blanca.svg" alt="volver arriba"></a>
     </div>
+    <script>
+    function mostrarGaleria() {
+        document.getElementById("galeria").style.display = "flex";
+    }
+
+    function ocultarGaleria() {
+        document.getElementById("galeria").style.display = "none";
+        window.location.hash = "";
+    }
+</script>
 
 </body>
 </html>
